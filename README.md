@@ -5,7 +5,7 @@ Usama Asfoor
 
 pwd
 
-~/UCB/Cyberxsecurity/bootcamp/Week13/Project-1
+~/UCB/Cybersecurity/bootcamp/Week13/Project-1
 
 
 
