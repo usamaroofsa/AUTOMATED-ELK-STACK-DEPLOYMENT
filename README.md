@@ -8,6 +8,7 @@ pwd
 ~/UCB/Cyberxsecurity/bootcamp/Week13/Project-1
 
 
+
 #This demonstration will help you deploy an ELK stack on your own and hopefully learn how to eventually configure it to the way you want to.
 
 #"ELK" is an ancronym for a trio of programs that work in sync to help analysts evaluate and visulize information. The "E" is for Elasticsearch, which is a search and analytics engine. The "L" is for Logstash, and it absorbs data from multiple sources simultaneously, organizes it and then sends it to a "stash". And lastly "K" for Kibana. Kibana is a great GUI tool that visualizes data for analysts with charts and graphs of the Elasticsearch. This creates the "ELK Stack" shown in my demonstration
