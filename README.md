@@ -162,5 +162,7 @@ SSH into the control node and follow the steps below:
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 After you download the playbook file from the repository, run the command "nano <file-to-edit>". This will let you edit the config and playbook files, which is required so that you can sync it within your own VMs.
-After it is edited, you can run the command "ansible-playbook <playbookfile.yml>" this will automatically run the commands in the playbook, while configured to the settings in the related config.yml files.
+After everthing is edited, Download the [Automation Bash Script](Bash/auto.sh) You can run the command with ($bash auto.sh). This bash script that I have made should run all of your playbooks wihtout having to do it one by one.
+  
+  Enjoy!
 
