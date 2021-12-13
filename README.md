@@ -61,8 +61,8 @@ Load balancing ensures that the application will be highly accessible , in addit
 
 First, a Jump Box VM is placed to host containers for the other VMs, allowing access only from the public ip of the users public IP.(You can find yours on whatsmyip.org). Then after the Jump Box, will be two other VMs. The Jump Box Hosts Ansible, which is used to configure the docker containers that are running on the other two VMs. Load Balancer handles the traffic split between the two VMs. This setup is the way to go because it isolates the access between both sides of the files, reducing chances of attacks, and the load balancer helps any overload of data and prevents a chance of any DDOS.
 
-he configuration details of each machine in the first virtual network (Red-Team) may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
+The configuration details of each machine in the first virtual network (Red-Team) may be found below.
+
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
