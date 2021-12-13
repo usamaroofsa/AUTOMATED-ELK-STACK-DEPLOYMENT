@@ -116,7 +116,7 @@ if docker isnt up, run $docker start elk
 Use the name of the docker image that is assigned at random. keep in mind to always log back in to the same name, as docker will recycle and creat a new name at random.
 Start and Attach the ansible docker ($sudo docker start <docker-name>), ($sudo docker attach <docker-name>)
 Add the ELK-Server ip address to the /ansible/hosts file.
-Then head to /etc/ansible/roles directory and download the ELK "elkplaybook.yml"
+Then head to /etc/ansible directory and download the ELK "elkplaybook.yml"
 Run the elkplaybook.yml in that same directory using $ansible-playbook elkplaybook.yml
 Then SSH into the ELK-SERVER VM to verify the server is up and running by entering the command $sudo docker ps
 After "docker ps" you should get the following:
@@ -160,8 +160,8 @@ SSH into the control node and follow the steps below:
 
 - Url to access the Kibana Database http://[<ELK.Public.IP>]:5601/app/kibana
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
-After you download the playbook file from the repository, run the command "nano <file-to-edit>". This will let you edit the config and playbook files, which is required so that you can sync it within your own VMs.
+_As a **Bonus**, I provided the specific commands the user will need to run to download the playbook in a single bash script.
+After you download the playbook files from the repository, edit the files by running the command "nano <file-to-edit>". This will let you edit the config and playbook files, which is required so that you can sync it within your own VMs. Also make sure to download the files in the /etc/ansible directory, otherwise the script wont work.
 After everthing is edited, Download the [Automation Bash Script](Bash/auto.sh) You can run the command with ($bash auto.sh). This bash script that I have made should run all of your playbooks wihtout having to do it one by one.
   
   Enjoy!
