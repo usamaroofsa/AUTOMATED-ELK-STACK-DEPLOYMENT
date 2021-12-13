@@ -41,6 +41,8 @@ pwd
   -[MetricBeat Config](YAML/metricbeat-configuration.yml)
   
   -[MetricBeat Playbook](YAML/metricbeat-playbook.yml)
+  
+  -[DVWA Playbook](YAML/DVWA.yml)
 
 
 
@@ -53,7 +55,7 @@ Load balancing ensures that the application will run smoothly , by spliting the 
 
 #RED-TEAM VN:
 
-First, a Jump Box VM is placed to host containers for the other VMs, allowing access only from the public ip of the users public IP.(You can find yours on whatsmyip.org). Then after the Jump Box, will be two other VMs. The Jump Box will host Ansible, which is used to configure the docker containers that are running on the other two VMs. Run $sudo docker pull cyberxsecurity/ansible to find it. Run the docker next with $docker run -ti cyberxsecurity/ansible:latest bash. Load Balancer handles the traffic split between the two VMs that run the DVWA. cd to /etc/ansible and dowlaod the [DVWA yaml file](/YAML/DVWA.yml). Make sure the the ansible config and hosts are updated. Then run $ansible-playbook DVWA.yml This should have your DVWA running.
+First, a Jump Box VM is placed to host containers for the other VMs, allowing access only from the public ip of the users public IP.(You can find yours on whatsmyip.org). Then after the Jump Box, will be two other VMs. The Jump Box will host Ansible, which is used to configure the docker containers that are running on the other two VMs. Run $sudo docker pull cyberxsecurity/ansible to find it. Run the docker next with $docker run -ti cyberxsecurity/ansible:latest bash. Load Balancer handles the traffic split between the two VMs that run the DVWA. cd to /etc/ansible and dowlaod the [DVWA Playbook](/YAML/DVWA.yml). Make sure the the ansible config and hosts are updated. Then run $ansible-playbook DVWA.yml This should have your DVWA running.
 
 The setup shown is a good way to go because it isolates the access between both sides of the files, reducing chances of attacks, and the load balancer helps any overload of data.
 
