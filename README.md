@@ -1,8 +1,10 @@
 ## Automated ELK Stack Deployment
 $whoami;
+
 -Usama Asfoor
 
 pwd
+
 ~/UCB/Cyberxsecurity/bootcamp/Week13/Project-1
 
 
