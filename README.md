@@ -1,9 +1,10 @@
 ## Automated ELK Stack Deployment
-cd ~/UCB/Cyberxsecurity/bootcamp/Week13/Project-1
-
 $whoami;
-
 -Usama Asfoor
+
+pwd
+~/UCB/Cyberxsecurity/bootcamp/Week13/Project-1
+
 
 #This demonstration will help you deploy an ELK stack on your own and hopefully learn how to eventually configure it to the way you want to.
 
