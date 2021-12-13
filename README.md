@@ -147,7 +147,7 @@ SSH into the control node and follow the steps below:
 - Run the playbook with ansible-playbook, and navigate to Kibana in your browser by entering http://[<ELK.Public.IP>]:5601/app/kibana to check that the installation worked as expected.
 - After clicking DEB, Filebeat, and Metricbeat you shall see the following:
 
-![](/images/MetricSuccess.png) ![](/images/FileSuccess.png)
+![](/Images/MetricSuccess.png) ![](/Images/FileSuccess.png)
 
 - The Playbook file is named "filebeat-playbook.yml and is stored in the /etc/ansible/"
 - Make sure to update the filebeat-config.yml file to include the vms. The ELK server is running in a peer'ed VN with the VN with the ansible config files.
