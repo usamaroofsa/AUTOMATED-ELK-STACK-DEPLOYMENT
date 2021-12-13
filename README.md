@@ -1,7 +1,7 @@
 ## Automated ELK Stack Deployment
 $whoami;
 
--Usama Asfoor
+Usama Asfoor
 
 pwd
 
